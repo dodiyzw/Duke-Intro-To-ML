@@ -19,6 +19,7 @@ y = model(x)
 loss = criterion(y, labels.to(mps_device) )
 ```
 
+- Note that if you are cloning this repository and not on M1 Mac, the MPS device may not work on your device. In that case, set the device to either CPU or CUDA if your device supports it. 
 
 
 
